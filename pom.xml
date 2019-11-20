@@ -4,13 +4,17 @@
 	<groupId>com.hz</groupId>
 	<artifactId>AllInOne</artifactId>
 	<version>1.0.0</version>
+	<modules>
+		<module>maven01</module>
+		<module>maven01</module>
+	</modules>
 	<packaging>pom</packaging>
 	<dependencies>
 		
 	</dependencies>
 
 	<build>
-		<finalName>PrisonAppB</finalName>
+		<finalName>AllInOne</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
