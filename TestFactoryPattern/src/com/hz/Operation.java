@@ -1,6 +1,6 @@
 package com.hz;
 
-public abstract class Operation {
+public abstract class gitOperation {
 	private double num1;
 	private double num2;
 
