@@ -1,7 +1,7 @@
 package com.hz;
 
 /**
- * 饿汉式
+ * 双重检查
  */
 public class Person3 {
     private String name;
@@ -20,9 +20,22 @@ public class Person3 {
 
     private static Person3 person;
 
-    public static Person3 getPerson2() {
+    //同步方法
+    public synchronized static Person3 getPerson3() {
         if (person == null) {
             person = new Person3();
+        }
+        return person;
+    }
+
+    //同步代码块-双重检查
+    public static Person3 getPersonNew3() {
+        if (person == null) {
+            synchronized (Person3.class) {
+                if (person == null) {
+                    person = new Person3();
+                }
+            }
         }
         return person;
     }
