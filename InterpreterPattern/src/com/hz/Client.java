@@ -1,6 +1,6 @@
-package com;
+package com.hz;
 
-public class hzClient {
+public class Client {
     public static void main(String[] args) {
         String input = "20";
         Context context = new Context(input);
